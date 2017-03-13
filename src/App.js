@@ -6,7 +6,7 @@ import './App.css';
 
 const Wrapper = styled.section`
   max-width: 800px;
-  margin: 0 auto;
+  margin: 10px auto;
 `
 
 class App extends Component {
