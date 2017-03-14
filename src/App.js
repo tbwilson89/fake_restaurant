@@ -10,7 +10,6 @@ import ImageOne from './ScrollingImages/images/fooddisplay.jpg'
 import ImageTwo from './ScrollingImages/images/foodmarket.jpg'
 import ImageThree from './ScrollingImages/images/drinks.jpg'
 import './App.css';
-var image = './images/fooddisplay.jpg'
 
 const Wrapper = styled.section`
   max-width: 800px;

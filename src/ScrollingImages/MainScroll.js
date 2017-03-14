@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
-import myImage from './images/fooddisplay.jpg'
-import myImageTwo from './images/foodmarket.jpg'
 
 const Section = styled.div`
   position: relative;
