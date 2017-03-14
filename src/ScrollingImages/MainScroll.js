@@ -12,9 +12,12 @@ const Section = styled.div`
   background-attachment: fixed;
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  font-size: 1.5em;
+  font-size: 1.8em;
   color: white;
-  text-shadow: -2px 0 black, -2px 0 black, -2px 0 black, -2px 0 black;
+  text-shadow: -1px 0px black, 1px 0px black, 0px -1px black, 0px 1px black;
+`
+const Title = styled.p`
+  margin-left: 10px;
 `
 
 class MainScroll extends Component {
@@ -23,8 +26,8 @@ class MainScroll extends Component {
     return (
       <div>
         <Section bg={this.props.bg}>
-        <br></br><p>This is information about this picture!.</p>
-
+        <br></br>
+        <Title>{this.props.title}</Title>
         </Section>
       </div>
     )

@@ -5,7 +5,7 @@ const Wrapper = styled.section`
   height: 100px;
   width: 100%;
   font-size: 1.5em;
-  background: grey;
+  
 `
 
 class TopSection extends Component {
