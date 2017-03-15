@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
+import ScrollableAnchor from 'react-scrollable-anchor'
 
 const Section = styled.div`
   position: relative;
   z-index: 1;
-  height: 100px;
+  height: 120px;
   width: 100%;
   background-image: url(${props => props.bg})
   background-attachment: fixed;
@@ -23,10 +24,12 @@ class MainScroll extends Component {
   render() {
     return (
       <div>
+        <ScrollableAnchor id={this.props.id}>
         <Section bg={this.props.bg}>
         <br></br>
         <Title>{this.props.title}</Title>
         </Section>
+        </ScrollableAnchor>
       </div>
     )
   }

@@ -4,6 +4,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+    </script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script>
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('#toTop').fadeIn();
+        } else {
+            $('#toTop').fadeOut();
+        }
+    });
+    </script>
+
+    <style>
+    #toTop {
+      padding: 5px 3px;
+      background: #fff;
+      color: #000;
+      position: fixed;
+      bottom: 0;
+      right: 5px;
+      display: none;
+    }
+    .back-to-top i {
+      font-size: 60px;
+    }
+    </style>
     <!--
       Notice the use of %PUBLIC_URL% in the tag above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -17,6 +44,10 @@
   </head>
   <body>
     <div id="root"></div>
+    <a href='#' id='toTop' style='display: inline;'>
+      <i class='fa fa-arrow-up fa-3x' aria-hidden='true'></i>
+    </a>
+
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.

@@ -13,26 +13,38 @@ const List = styled.ul`
   padding-top: 10px;
   padding-bottom: 10px;
 `
+const Price = styled.span`
+  float: right;
+  padding-right: 50px;
+`
+const Icon = styled.i`
+  padding: 3px;
+`
 
 class Menu extends Component {
   render(){
     return (
       <Wrapper>
         <List>
-          <li>Generic Burger</li>
-          <li>Generic Salad
+          <li><Icon className='fa fa-arrow-circle-o-right'></Icon>Generic Burger
+          <Price>$6.99</Price>
+        </li>
+          <li><Icon className='fa fa-arrow-circle-o-right'></Icon>Generic Salad
+          <Price>$5.99</Price>
             <ul>
               <li>Caesar</li>
               <li>House</li>
             </ul>
           </li>
-          <li>Generic Sandwich
+          <li><Icon className='fa fa-arrow-circle-o-right'></Icon>Generic Sandwich
+          <Price>$5.99</Price>
             <ul>
               <li>Turkey</li>
               <li>BLT</li>
             </ul>
           </li>
-          <li>Generic Chicken
+          <li><Icon className='fa fa-arrow-circle-o-right'></Icon>Generic Chicken
+          <Price>$6.99</Price>
             <ul>
               <li>Strips</li>
               <li>Fried</li>

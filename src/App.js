@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
+import ScrollableAnchor from 'react-scrollable-anchor'
 import Intro from './header/Intro'
+import NavBar from './header/NavBar'
+import VegMenu from './header/VegMenu'
 import TopSection from './header/TopSection'
 import MainScroll from './ScrollingImages/MainScroll'
 import Menu from './header/LunchMenu'
@@ -27,26 +30,15 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-      <div>
         <TopSection />
+        <NavBar />
         <Intro />
-        <MainScroll bg={ImageOne} title="Menu"/>
+        <MainScroll bg={ImageOne} title="Menu" id='menu'/>
         <Menu />
-        <MainScroll bg={ImageTwo} title="Vegetarian" />
-        <TopSection />
-        <MainScroll bg={ImageThree} title="Drinks" />
+        <MainScroll bg={ImageTwo} title="Vegetarian" id='vegetarian' />
+        <VegMenu />
+        <MainScroll bg={ImageThree} title="Drinks" id="drinks"/>
         <Drinks />
-        <ExtendSection />
-        <div className="App">
-          <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h2>Fake Restaurant Webpage!</h2>
-          </div>
-          <p className="App-intro">
-            We serve nothing but the fakest food out there!
-          </p>
-        </div>
-      </div>
       </Wrapper>
     );
   }
