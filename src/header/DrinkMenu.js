@@ -18,10 +18,6 @@ const Price = styled.span`
   float: right;
   padding-right: 50px;
 `
-const AddPrice = styled.span`
-  float: right;
-  padding-right: 25px;
-`
 const Icon = styled.i`
   padding: 3px;
 `
