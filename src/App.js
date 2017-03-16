@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
-import ScrollableAnchor from 'react-scrollable-anchor'
 import Intro from './header/Intro'
 import NavBar from './header/NavBar'
 import VegMenu from './header/VegMenu'
@@ -8,7 +7,6 @@ import TopSection from './header/TopSection'
 import MainScroll from './ScrollingImages/MainScroll'
 import Menu from './header/LunchMenu'
 import Drinks from './header/DrinkMenu'
-import logo from './logo.svg';
 import ImageOne from './ScrollingImages/images/fooddisplay.jpg'
 import ImageTwo from './ScrollingImages/images/foodmarket.jpg'
 import ImageThree from './ScrollingImages/images/drinks.jpg'
@@ -39,6 +37,7 @@ class App extends Component {
         <VegMenu />
         <MainScroll bg={ImageThree} title="Drinks" id="drinks"/>
         <Drinks />
+        <ExtendSection />
       </Wrapper>
     );
   }
