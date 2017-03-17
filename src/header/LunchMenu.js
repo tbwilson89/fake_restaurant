@@ -26,24 +26,24 @@ class Menu extends Component {
     return (
       <Wrapper>
         <List>
-          <li><Icon className='fa fa-arrow-circle-o-right'></Icon>Generic Burger
+          <li><Icon className='fa fa-square-o'></Icon>Generic Burger
           <Price>$6.99</Price>
         </li>
-          <li><Icon className='fa fa-arrow-circle-o-right'></Icon>Generic Salad
+          <li><Icon className='fa fa-square-o'></Icon>Generic Salad
           <Price>$5.99</Price>
             <ul>
               <li>Caesar</li>
               <li>House</li>
             </ul>
           </li>
-          <li><Icon className='fa fa-arrow-circle-o-right'></Icon>Generic Sandwich
+          <li><Icon className='fa fa-square-o'></Icon>Generic Sandwich
           <Price>$5.99</Price>
             <ul>
               <li>Turkey</li>
               <li>BLT</li>
             </ul>
           </li>
-          <li><Icon className='fa fa-arrow-circle-o-right'></Icon>Generic Chicken
+          <li><Icon className='fa fa-square-o'></Icon>Generic Chicken
           <Price>$6.99</Price>
             <ul>
               <li>Strips</li>

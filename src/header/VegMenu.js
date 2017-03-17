@@ -25,7 +25,7 @@ class VegMenu extends Component {
     return (
       <Wrapper>
         <List>
-          <li><Icon className='fa fa-arrow-circle-o-right'></Icon>
+          <li><Icon className='fa fa-square-o'></Icon>
           Vegetables
           <Price>$6.99</Price>
             <ul>

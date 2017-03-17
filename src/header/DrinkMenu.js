@@ -5,6 +5,7 @@ const Wrapper = styled.section`
   background: grey;
   margin: 0;
   border-radius: 5px;
+  padding-bottom: 20px;
 `
 
 const List = styled.ul`
@@ -27,7 +28,7 @@ class Drinks extends Component {
     return (
       <Wrapper>
         <List>
-          <li><Icon className='fa fa-arrow-circle-o-right'></Icon>Tea
+          <li><Icon className='fa fa-square-o'></Icon>Tea
           <Price>$1.49</Price>
             <List>
               <li>Black</li>
@@ -41,7 +42,7 @@ class Drinks extends Component {
               </li>
             </List>
           </li>
-          <li><Icon className='fa fa-arrow-circle-o-right'></Icon>Soda
+          <li><Icon className='fa fa-square-o'></Icon>Soda
           <Price>$1.49</Price>
             <List>
               <li>Pepsi</li>
@@ -51,7 +52,7 @@ class Drinks extends Component {
               <li>Root Beer</li>
             </List>
           </li>
-          <li><Icon className='fa fa-arrow-circle-o-right'></Icon>Coffee
+          <li><Icon className='fa fa-square-o'></Icon>Coffee
           <Price>$1.99</Price>
         </li>
         </List>

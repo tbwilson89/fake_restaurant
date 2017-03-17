@@ -7,6 +7,7 @@ import TopSection from './header/TopSection'
 import MainScroll from './ScrollingImages/MainScroll'
 import Menu from './header/LunchMenu'
 import Drinks from './header/DrinkMenu'
+import Footer from './header/Footer'
 import ImageOne from './ScrollingImages/images/fooddisplay.jpg'
 import ImageTwo from './ScrollingImages/images/foodmarket.jpg'
 import ImageThree from './ScrollingImages/images/drinks.jpg'
@@ -19,10 +20,10 @@ const Wrapper = styled.section`
   margin: 10px auto;
   box-shadow: 0px 0px 54px 3px black;
 `
-const ExtendSection = styled.section`
+/*const ExtendSection = styled.section`
   height: 2000px;
   background-color: grey;
-`
+`*/
 
 class App extends Component {
   render() {
@@ -37,7 +38,7 @@ class App extends Component {
         <VegMenu />
         <MainScroll bg={ImageThree} title="Drinks" id="drinks"/>
         <Drinks />
-        <ExtendSection />
+        <Footer />
       </Wrapper>
     );
   }
